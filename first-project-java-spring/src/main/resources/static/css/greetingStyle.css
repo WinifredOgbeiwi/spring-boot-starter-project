@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #0b3d91;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 2rem;
+}
+
+.intro-part {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.intro-part img.profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.intro-part.story {
+    text-align: left;
+    max-width: 400px;
+}
+
+.intro-part.story h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.intro-part.story p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.button {
+    background: #0b3d91;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #092a6e;
+}
+
+.cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+a.button {
+    background: #0b3d91;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.button:hover {
+    background: #092a6e;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}

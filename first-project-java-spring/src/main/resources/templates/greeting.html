@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Getting Starter: Serving Web Content</title>
+  <meta charset="UTF-8">
+  <title>Wynny’s Journey</title>
+  <link rel="stylesheet" th:href="@{/css/greetingStyle.css}">
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" ></p>
-<p>lorem  hvcdhbcdjscbsdjhcvbdshgvcasjjxnsakmxs dshxvbskdhuxbaejksx hwdvhsudcb </p>
-<img th:src="@{/images/vistula.jpeg}" width="600" height="600" alt="55">
+
+<header>
+  <h1>Hello <span th:text="${name}">friend</span>, welcome to my world 🌍</h1>
+</header>
+
+<div class="section intro" th:unless="${name.toLowerCase() == 'vistula'}">
+  <div class="intro-part law">
+    <img class="profile" th:src="@{/images/law.jpg}" alt="Wynny in Law">
+  </div>
+
+  <div class="intro-part story">
+    <h2>👩‍⚖️ From Law to Code</h2>
+    <p>
+      My name is <strong>Winifred Imade Ogbeiwi</strong> — once a lawyer with a briefcase, now a developer with a keyboard.
+      My journey into tech began during a school strike, when I decided to stay busy by learning something completely new — programming.
+    </p>
+
+    <p>
+      I love building impactful tech, mentoring young women in STEM, and turning bugs into breakthroughs. 💻✨
+    </p>
+
+    <div class="cta">
+      <p>Want to see what I’ve been up to at Vistula?</p>
+      <a class="button" href="/greeting?name=vistula">Explore Vistula With Me 🎓</a>
+    </div>
+  </div>
+
+  <div class="intro-part tech">
+    <img class="profile" th:src="@{/images/tech.jpg}" alt="Wynny in Tech">
+  </div>
+</div>
+
+
+
+<div class="section" th:if="${name.toLowerCase() == 'vistula'}">
+  <h2>🎓 Life at Vistula University</h2>
+  <p>
+    Welcome to my academic home! Vistula is more than a university — it’s where I’ve turned my dreams into projects, ideas into code,
+    and classmates into collaborators.
+  </p>
+
+
+
+
+  <div class="gallery">
+    <div class="card">
+      <img th:src="@{/images/goldman.jpg}" alt="On campus">
+      <div class="caption">Walking into opportunity every day 🌱</div>
+    </div>
+
+    <div class="card">
+      <img th:src="@{/images/math.jpg}" alt="In the lab">
+      <div class="caption">Coding, testing, and a little bit of "why isn’t this compiling?" 🤖</div>
+    </div>
+
+    <div class="card">
+      <img th:src="@{/images/beach.jpg}" alt="In class">
+      <div class="caption">Taking notes and owning my future 💼</div>
+    </div>
+
+    <div class="card">
+      <img th:src="@{/images/beads.jpg}" alt="At a tech event">
+      <div class="caption">Speaking, hosting, and empowering women in tech 👩‍💻</div>
+    </div>
+
+    <div class="card">
+      <img th:src="@{/images/mentor.jpg}" alt="In the library">
+      <div class="caption">Books, bugs, and breakthrough ideas 📚</div>
+    </div>
+
+    <div class="card">
+      <img th:src="@{/images/teaching.jpg}" alt="Vistula campus">
+      <div class="caption">The peaceful, vibrant campus where it all happens 🏫</div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
