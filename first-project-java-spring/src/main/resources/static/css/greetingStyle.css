@@ -75,22 +75,9 @@ header {
     display: inline-block;
 }
 
-.button:hover {
-    background: #092a6e;
-}
-
 .cta {
     margin-top: 2rem;
     text-align: center;
-}
-
-a.button {
-    background: #0b3d91;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 a.button:hover {
