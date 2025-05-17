@@ -73,8 +73,12 @@ This project is my first hands-on exercise using **Spring Boot**, where I explor
    - Fetches and displays JSON data
 
 ## 🖼️ Screenshots
-____________________________________________
-
+![Default ("/") link](screenshoots/default.png)
+![Default greeting link](screenshoots/greeting.png)
+![Other parameter link](screenshoots/other-parameter.png)
+![Vistula parameter link](screenshoots/vistula.png)
+![Profile link](screenshoots/profile.png)
+![Profile link](screenshoots/profile-api.png)
 
 **Author:** Winifred Imade Ogbeiwi  
 **School:** Vistula University  
