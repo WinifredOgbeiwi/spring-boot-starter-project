@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Wynny’s Journey</title>
-  <link rel="stylesheet" th:href="@{/css/greetingStyle.css}">
+  <link rel="stylesheet"  href="/css/profileStyle.css" th:href="@{/css/greetingStyle.css}">
 </head>
 <body>
 
@@ -26,11 +26,18 @@
     <p>
       I love building impactful tech, mentoring young women in STEM, and turning bugs into breakthroughs. 💻✨
     </p>
-
+<div style="display: flex;gap: 20px;justify-content: space-between">
     <div class="cta">
       <p>Want to see what I’ve been up to at Vistula?</p>
       <a class="button" href="/greeting?name=vistula">Explore Vistula With Me 🎓</a>
     </div>
+
+    <div class="cta">
+      <p>Want to view my mini fun profile?</p>
+      <a class="button" href="/profile">Explore Vistula With Me 🎓</a>
+    </div>
+
+</div>
   </div>
 
   <div class="intro-part tech">
@@ -46,9 +53,6 @@
     Welcome to my academic home! Vistula is more than a university — it’s where I’ve turned my dreams into projects, ideas into code,
     and classmates into collaborators.
   </p>
-
-
-
 
   <div class="gallery">
     <div class="card">
@@ -80,6 +84,11 @@
       <img th:src="@{/images/teaching.jpg}" alt="Vistula campus">
       <div class="caption">The peaceful, vibrant campus where it all happens 🏫</div>
     </div>
+
+  </div>
+  <div class="cta">
+    <p>Want to view my mini fun profile?</p>
+    <a class="button" href="/profile">Explore Vistula With Me 🎓</a>
   </div>
 </div>
 

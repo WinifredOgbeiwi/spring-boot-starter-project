@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wynny's Profile</title>
+    <link rel="stylesheet" th:href="@{/css/profileStyle.css}">
+
+</head>
+<body>
+<div class="container" id="profile"></div>
+<script>
+    fetch('api/profile')
+    .then(res => res.json())
+    .then(data=>{
+        console.log(data)
+        const content = document.getElementById('profile');
+        content.innerHTML =`
+        <h1>My Profile</h1>
+
+        <div style="background: #ffe4e9" class="profile-content">
+          <p>Name:</p>
+          <h3>${data.name}</h3>
+        </div>
+
+        <div style="background: #ffccd5" class="profile-content">
+              <p>Work Place:</p>
+          <h3>${data.workplace}</h3>
+        </div>
+
+        <div style="background: #ffb6c1" class="profile-content">
+          <p>Current Role:</p>
+          <h3 >${data.currentRole}</h3>
+        </div>
+
+        <div style="background: #ff8fa3" class="profile-content">
+          <p>School:</p>
+          <h3>${data.school}</h3>
+        </div>
+
+        <div style="background: #ff5c8a" class="profile-content">
+          <p>Hobbies:</p>
+          <h3>${data.hobbies}</h3>
+        </div>
+
+        <div style="background: #ff1493" class="profile-content">
+          <p>Goal:</p>
+          <h3 >${data.goal}</h3>
+        </div>
+
+        `;
+    })
+    .catch(err=>{
+        alert(`"Error fetching profile: ${err}"`)
+    });
+</script>
+</body>
+</html>

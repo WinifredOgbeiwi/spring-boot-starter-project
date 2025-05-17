@@ -17,4 +17,9 @@ public class HelloController {
         model.addAttribute("name",name);
         return "greeting";
     }
+
+    @GetMapping("/profile")
+    public String profile (){
+        return "profile";
+    }
 }
