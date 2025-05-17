@@ -41,6 +41,9 @@ This project is my first hands-on exercise using **Spring Boot**, where I explor
 5. **Applied Separation of Concerns**  
    - Moved all CSS to the `static` folder (outside `templates`) to follow best practices.
    - Learned that Thymeleaf works with CSS only when the files are placed in the `static` directory.
+     
+6. **Use conditional rendering**
+   - used Thymeleaf if else to render a page based on the url parameters
 
 ## 🧠 What I Learned
 
