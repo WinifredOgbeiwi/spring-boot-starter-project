@@ -53,7 +53,6 @@ This project is my first hands-on exercise using **Spring Boot**, where I explor
   - Plain text with `@ResponseBody`
   - HTML views with Thymeleaf
   - JSON objects via REST endpoints
-- How to organize frontend files (HTML, CSS)
 - That `static/` is for CSS, JS, images; `templates/` is for Thymeleaf views
 - Importance of route separation and clear structure
 
